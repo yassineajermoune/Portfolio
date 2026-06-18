@@ -1,0 +1,13 @@
+{
+  "name": "mohamed-essaidi-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio professionnel de Mohamed Essaidi - Graphiste, Développeur Frontend & Photographe",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site, no build needed'",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.9"
+  }
+}
