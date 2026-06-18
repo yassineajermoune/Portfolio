@@ -354,14 +354,16 @@ section {
   width: 260px;
   height: 260px;
   border-radius: 50%;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-  color: var(--text-muted);
+  border: 2px solid var(--border);
   box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ABOUT */
@@ -768,7 +770,6 @@ section {
   .hero-avatar {
     width: 200px;
     height: 200px;
-    font-size: 3.5rem;
   }
 
   .hero-name { font-size: 2.4rem; }
@@ -810,7 +811,53 @@ section {
 
 @media (max-width: 480px) {
   .hero-name { font-size: 1.5rem; }
-  .hero-avatar { width: 160px; height: 160px; font-size: 2.8rem; }
+  .hero-avatar { width: 160px; height: 160px; }
   .container { padding: 0 18px; }
-  .contact-form { padding: 24px; }
+  .section-head { margin-bottom: 36px; }
+  section { padding: 50px 0; }
+  .hero-role { font-size: 0.95rem; }
+  .hero-desc { font-size: 0.9rem; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .btn { padding: 11px 22px; font-size: 0.85rem; width: 100%; justify-content: center; }
+  .hero-social { gap: 8px; flex-wrap: wrap; justify-content: center; }
+  .hero-social a { width: 36px; height: 36px; font-size: 0.9rem; }
+  .about-stats { flex-direction: column; gap: 24px; align-items: center; }
+  .stat-num { font-size: 1.5rem; }
+  .about-text p { font-size: 0.95rem; }
+  .service-card { padding: 24px 18px; }
+  .service-card h3 { font-size: 1rem; }
+  .service-card li { font-size: 0.85rem; }
+  .work-filters { gap: 6px; }
+  .filter { padding: 6px 14px; font-size: 0.8rem; }
+  .work-info { padding: 16px; }
+  .work-info h3 { font-size: 0.95rem; }
+  .work-info p { font-size: 0.8rem; }
+  .contact-form { padding: 20px; }
+  .contact-item { gap: 10px; }
+  .contact-item i { width: 36px; height: 36px; font-size: 0.9rem; }
+  .contact-item a, .contact-item p { font-size: 0.85rem; }
+}
+
+@media (max-width: 380px) {
+  .container { padding: 0 14px; }
+  section { padding: 40px 0; }
+  .hero-name { font-size: 1.3rem; }
+  .hero-label { font-size: 0.8rem; }
+  .hero-role { font-size: 0.85rem; }
+  .hero-desc { font-size: 0.85rem; margin-bottom: 24px; }
+  .hero-avatar { width: 130px; height: 130px; font-size: 2.2rem; }
+  .hero-social a { width: 32px; height: 32px; font-size: 0.8rem; }
+  .section-head h2 { font-size: 1.3rem; }
+  .section-tag { font-size: 0.7rem; }
+  .nav-inner { padding: 0 14px; }
+  .nav-links { width: 100%; }
+  .about-stats { gap: 18px; }
+  .stat-num { font-size: 1.3rem; }
+  .services-grid { gap: 14px; }
+  .service-card { padding: 20px 14px; }
+  .work-grid { gap: 14px; }
+  .work-thumb { height: 150px; font-size: 2rem; }
+  .contact-form { padding: 16px; }
+  .form-row input, .form-row textarea { padding: 10px 14px; font-size: 0.85rem; }
+  .footer p { font-size: 0.78rem; }
 }
