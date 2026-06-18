@@ -754,9 +754,14 @@ section {
 
 /* RESPONSIVE */
 @media (max-width: 968px) {
+  .hero {
+    padding-top: 96px;
+  }
+
   .hero-body {
     flex-direction: column-reverse;
     text-align: center;
+    gap: 32px;
   }
 
   .hero-main { display: flex; flex-direction: column; align-items: center; }
@@ -810,13 +815,22 @@ section {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding-top: 80px;
+    min-height: auto;
+  }
+
+  .hero-body {
+    gap: 24px;
+  }
+
   .hero-name { font-size: 1.5rem; }
-  .hero-avatar { width: 160px; height: 160px; }
+  .hero-avatar { width: 150px; height: 150px; }
   .container { padding: 0 18px; }
-  .section-head { margin-bottom: 36px; }
+  .section-head { margin-bottom: 32px; }
   section { padding: 50px 0; }
   .hero-role { font-size: 0.95rem; }
-  .hero-desc { font-size: 0.9rem; }
+  .hero-desc { font-size: 0.9rem; margin-bottom: 28px; }
   .hero-actions { flex-direction: column; align-items: center; }
   .btn { padding: 11px 22px; font-size: 0.85rem; width: 100%; justify-content: center; }
   .hero-social { gap: 8px; flex-wrap: wrap; justify-content: center; }
@@ -840,24 +854,33 @@ section {
 
 @media (max-width: 380px) {
   .container { padding: 0 14px; }
-  section { padding: 40px 0; }
-  .hero-name { font-size: 1.3rem; }
-  .hero-label { font-size: 0.8rem; }
-  .hero-role { font-size: 0.85rem; }
-  .hero-desc { font-size: 0.85rem; margin-bottom: 24px; }
-  .hero-avatar { width: 130px; height: 130px; font-size: 2.2rem; }
-  .hero-social a { width: 32px; height: 32px; font-size: 0.8rem; }
-  .section-head h2 { font-size: 1.3rem; }
-  .section-tag { font-size: 0.7rem; }
+  section { padding: 36px 0; }
+  .hero {
+    padding-top: 72px;
+  }
+  .hero-body {
+    gap: 20px;
+  }
+  .hero-name { font-size: 1.25rem; }
+  .hero-label { font-size: 0.78rem; }
+  .hero-role { font-size: 0.82rem; min-height: auto; }
+  .hero-desc { font-size: 0.83rem; margin-bottom: 20px; }
+  .hero-avatar { width: 110px; height: 110px; }
+  .hero-social a { width: 30px; height: 30px; font-size: 0.78rem; }
+  .section-head h2 { font-size: 1.25rem; }
+  .section-tag { font-size: 0.68rem; }
   .nav-inner { padding: 0 14px; }
   .nav-links { width: 100%; }
-  .about-stats { gap: 18px; }
-  .stat-num { font-size: 1.3rem; }
-  .services-grid { gap: 14px; }
-  .service-card { padding: 20px 14px; }
-  .work-grid { gap: 14px; }
-  .work-thumb { height: 150px; font-size: 2rem; }
-  .contact-form { padding: 16px; }
-  .form-row input, .form-row textarea { padding: 10px 14px; font-size: 0.85rem; }
-  .footer p { font-size: 0.78rem; }
+  .about-stats { gap: 16px; }
+  .stat-num { font-size: 1.25rem; }
+  .about-text p { font-size: 0.88rem; }
+  .services-grid { gap: 12px; }
+  .service-card { padding: 18px 14px; }
+  .service-card h3 { font-size: 0.95rem; }
+  .service-card li { font-size: 0.82rem; }
+  .work-grid { gap: 12px; }
+  .work-thumb { height: 130px; font-size: 1.8rem; }
+  .contact-form { padding: 14px; }
+  .form-row input, .form-row textarea { padding: 10px 12px; font-size: 0.83rem; }
+  .footer p { font-size: 0.75rem; }
 }
